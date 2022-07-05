@@ -3,4 +3,5 @@
 
 	sudo apt-get remove tig
 	
+# have different ideal
 
