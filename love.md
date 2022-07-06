@@ -32,6 +32,23 @@
 	git push 
 	git push origin <远程分支名>
 	
+## 本地上传
+
+	#初始化本地仓库
+	git init 
+	git add README.md 
+	git commit -m "first commit"
+	git remote add Ceres your_first_git_address
+	git push -u Ceres master
+	git remote add Mars your_second_git_address
+	#需要上传的分支名称为master
+	git push -u Mars master
+	#显示远端的相关分支
+	git show-ref
+	#git push --set-upstream的简写形式为git push -u
+	#（--set-upstream选项会指定一个默认主机），同时指定该主机为默认主机，后面使用可以不加任何参数使用git push
+	git push --set-upstream origin D**
+
 ## 本地开发
 
 	#upstream一般为他人远端仓库名字，后面接远端仓库地址
@@ -40,6 +57,7 @@
 	git pull upstream master
 	#创建分支bugfix
 	git checkout -b bugfix
+	#切换分支
 	git checkout master
 	git pull upstream master
 	git checkout bugfix
