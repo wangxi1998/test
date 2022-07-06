@@ -25,13 +25,37 @@
 
 	git clone `地址`
 	
-
-	
 	git add.
 	git ci
 	git commit -m "message"
 	git commit --help
 	git push 
 	git push origin <远程分支名>
+	
+## 本地开发
+
+	#upstream一般为他人远端仓库名字，后面接远端仓库地址
+	git remote add upstream https://github.com/ant-design/ant-design.git
+	#获取远端仓库的master分支最新代码
+	git pull upstream master
+	#创建分支bugfix
+	git checkout -b bugfix
+	git checkout master
+	git pull upstream master
+	git checkout bugfix
+	#把 master 分支的最新 commit 合并到 bugfix 分支
+	git rebase master
+	把现在的代码 push 到远端的 bugfix 分支,origin一般为自己远端仓库名字
+	git push origin bugfix
+
+# 使用技巧
+## 快捷键总览 
+```shift + ? ```
+## 快速查看文件 
+```t ```
+## 高亮代码
+给别人标出重点代码，只需要在发给别人的 GitHub 链接后面加上 ```#L``` 和行号，多行代码用```-```
+
+
 	
 	
