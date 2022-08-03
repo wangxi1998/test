@@ -51,6 +51,8 @@
 
 ## 本地开发
 
+	#进入文件夹后初始化本地仓库
+	git init 
 	#upstream一般为他人远端仓库名字，后面接远端仓库地址
 	git remote add upstream https://github.com/ant-design/ant-design.git
 	#获取远端仓库的master分支最新代码
